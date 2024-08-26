@@ -1,7 +1,6 @@
 // Rock, paper, scissors
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <time.h>
 
 const char shapes[] = {'r', 'p', 's'};
