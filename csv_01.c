@@ -7,7 +7,6 @@
 int main()
 {
     const char *filename = "./games.csv";
-    errno = 0;
 
     FILE *fp = fopen(filename, "r");
     if (fp == NULL)
