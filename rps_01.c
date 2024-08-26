@@ -9,7 +9,7 @@ const char shapes[] = {'r', 'p', 's'};
 int isshape(char s)
 {
     for (int i = 0; i < 3; i++)
-        if (tolower(s) == shapes[i])
+        if (s == shapes[i])
             return 1;
     return 0;
 }
@@ -26,6 +26,8 @@ int main()
 
         printf("Your shape: ");
         scanf(" %c", &user);
+        
+        user |= 0x20;
 
         while (getchar() != '\n')
             ;
